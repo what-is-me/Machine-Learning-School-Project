@@ -13,3 +13,6 @@
 - [matplotlib](https://github.com/matplotlib/matplotlib)
 - [tqdm](https://github.com/tqdm/tqdm)
 - [scikit-learn](https://github.com/scikit-learn/scikit-learn)仅使用NearestNeighbors部分
+
+Teammates：
+[![](https://avatars.githubusercontent.com/u/70659394)](https://github.com/what-is-me)
