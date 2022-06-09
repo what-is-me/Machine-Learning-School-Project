@@ -15,4 +15,5 @@
 - [scikit-learn](https://github.com/scikit-learn/scikit-learn)仅使用NearestNeighbors部分
 
 Teammates：
-[![](https://avatars.githubusercontent.com/u/70659394?s=64)](https://github.com/what-is-me)
+
+[![what-is-me](https://avatars.githubusercontent.com/u/70659394?s=64)](https://github.com/what-is-me)
