@@ -1,0 +1,4 @@
+image/*
+dc.tif
+*.mat
+*/__pycache__/*

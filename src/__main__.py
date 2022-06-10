@@ -25,7 +25,6 @@ def saveimg(pic: list | np.ndarray, path: str = "image/output") -> None:
         maxn = p.max()
         minn = p.min()
         bd = maxn - minn
-        mid = (maxn + minn) / 2
         plt.axis("off")
         plt.imshow(Image.fromarray((p - minn) / bd * 256), cmap="gray")
         plt.savefig(path + str(i))
