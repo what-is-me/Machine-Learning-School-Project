@@ -12,6 +12,7 @@
 - [numpy](https://github.com/numpy/numpy)
 - [matplotlib](https://github.com/matplotlib/matplotlib)
 - [tqdm](https://github.com/tqdm/tqdm)
+- [gdal](https://github.com/OSGeo/gdal)
 - [scikit-learn](https://github.com/scikit-learn/scikit-learn)仅使用NearestNeighbors部分
 
 Teammates：
