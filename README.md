@@ -24,7 +24,6 @@
 ### Ubuntu:
 
 ```bash
-sudo apt-get install python3.10
 git clone https://github.com/what-is-me/Machine-Learning-School-Project.git
 cd Machine-Learning-School-Project
 pip3.10 install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple

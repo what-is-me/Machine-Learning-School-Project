@@ -1,3 +1,4 @@
+from typing import Union
 from osgeo import gdal
 import numpy as np
 import matplotlib.pyplot as plt
@@ -13,7 +14,7 @@ from tqdm import tqdm
 os.system("mkdir image&cd image&mkdir LLE&mkdir PCA&mkdir colored&mkdir table")
 
 
-def saveimg(pic: list | np.ndarray, path: str = "image/output") -> None:
+def saveimg(pic: Union[list, np.ndarray], path: str = "image/output") -> None:
     """将降维后的图片按维度显示
 
     Args:

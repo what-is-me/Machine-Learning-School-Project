@@ -1,3 +1,4 @@
+from typing import Union
 from matplotlib import pyplot as plt
 import numpy as np
 from tqdm import tqdm
@@ -11,7 +12,7 @@ def distance(p1, p3):
     return min(dis(p1, p2) for p2 in p3)
 
 
-def _kmeans(data: list[list] | np.ndarray, k: int):
+def _kmeans(data: Union[list[list], np.ndarray], k: int):
     print(k)
     center = [data[0]]
     center.extend(
@@ -33,7 +34,7 @@ def _kmeans(data: list[list] | np.ndarray, k: int):
     return np.array(points), np.array(center)
 
 
-def SSE(data: list[list] | np.ndarray, path: str) -> None:
+def SSE(data: Union[list[list], np.ndarray], path: str) -> None:
     K = list(range(1, 50))
     sse_result = []
     for k in K:
@@ -50,7 +51,7 @@ def SSE(data: list[list] | np.ndarray, path: str) -> None:
     plt.savefig(path)
 
 
-def KMeans(data: list[list] | np.ndarray, k: int, times: int = 10):
+def KMeans(data: Union[list[list], np.ndarray], k: int, times: int = 10):
     center = [data[0]]
     center.extend(
         data[np.argmax(np.array([distance(point, center) for point in data]))] for _ in range(k - 1)
