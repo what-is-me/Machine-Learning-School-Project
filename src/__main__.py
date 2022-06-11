@@ -1,4 +1,3 @@
-from typing import Union
 from osgeo import gdal
 import numpy as np
 import matplotlib.pyplot as plt
@@ -14,7 +13,7 @@ from tqdm import tqdm
 os.system("mkdir image&cd image&mkdir LLE&mkdir PCA&mkdir colored&mkdir table")
 
 
-def saveimg(pic: Union[list, np.ndarray], path: str = "image/output") -> None:
+def saveimg(pic: np.ndarray, path: str = "image/output") -> None:
     """将降维后的图片按维度显示
 
     Args:
@@ -42,7 +41,7 @@ for color in data:
     for i in range(size):
         for j in range(size):
             Data[i][j].append(float(color[i][j]))
-Data = np.array(zipdata.Zip(Data))  # 将二维矩阵展开成一维的
+Data = zipdata.Zip(np.array(Data))  # 将二维矩阵展开成一维的
 
 
 def DR(dr, Data: np.ndarray, N: int, k: int, Type: str):
@@ -52,7 +51,7 @@ def DR(dr, Data: np.ndarray, N: int, k: int, Type: str):
     color = [[rand(0, 255), rand(0, 255), rand(0, 255)] for _ in range(k)]  # 颜色随机
     # Kmean.SSE(Data, f"image/table/{Type}")
     pic = zipdata.Unzip(
-        list(map(lambda x: color[x], Kmean.KMeans(result, k)[0]))
+        np.array(list(map(lambda x: color[x], Kmean.KMeans(result, k)[0])))
     )  # 将k-means分类后的结果替换成不同的颜色
     plt.imshow(np.array(pic))
     plt.savefig(f"image/colored/{Type}")  # 显示图片并保存
