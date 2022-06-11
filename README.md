@@ -26,7 +26,8 @@
 ```bash
 git clone https://github.com/what-is-me/Machine-Learning-School-Project.git
 cd Machine-Learning-School-Project
-pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+pip install -r requirements.txt
+pip install ./lib/gdal310.whl#if your python version is 3.10
 python ./src/__main__.py
 ```
 
