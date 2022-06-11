@@ -34,6 +34,13 @@ python ./src/__main__.py
 
 ### [try on gitpod:](https://gitpod.io#https://github.com/what-is-me/Machine-Learning-School-Project)
 
+输入:
+
+```bash
+sudo apt-get install libgdal-dev
+pip install -r requirements.txt
+```
+
 ## 组员：
 
 <a href="https://github.com/what-is-me"><img src="https://avatars.githubusercontent.com/u/70659394?s=64" alt="what-is-me" width="64" height="64" /></a>
