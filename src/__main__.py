@@ -45,6 +45,7 @@ Data = np.array(zipdata.Zip(Data))  # 将二维矩阵展开成一维的
 
 
 def DR(dr, Data: np.ndarray, N: int, k: int, Type: str):
+    print(f"{Type} begin")
     result = dr(Data, N)
     saveimg(zipdata.ToKPics(result), path=f"image/{Type}/img")
     color = [[rand(0, 255), rand(0, 255), rand(0, 255)] for _ in range(k)]  # 颜色随机

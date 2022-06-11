@@ -50,7 +50,7 @@ def SSE(data: list[list] | np.ndarray, path: str) -> None:
     plt.savefig(path)
 
 
-def KMeans(data: list[list] | np.ndarray, k: int, times: int = 20):
+def KMeans(data: list[list] | np.ndarray, k: int, times: int = 10):
     center = [data[0]]
     center.extend(
         data[np.argmax(np.array([distance(point, center) for point in data]))] for _ in range(k - 1)
