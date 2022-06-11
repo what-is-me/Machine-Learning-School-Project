@@ -26,6 +26,8 @@
 ```bash
 git clone https://github.com/what-is-me/Machine-Learning-School-Project.git
 cd Machine-Learning-School-Project
+sudo apt-get install libgdal-dev
+echo "y"
 pip install -r requirements.txt
 python ./src/__main__.py
 ```
