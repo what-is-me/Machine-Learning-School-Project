@@ -26,8 +26,8 @@
 ```bash
 git clone https://github.com/what-is-me/Machine-Learning-School-Project.git
 cd Machine-Learning-School-Project
-pip3.10 install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
-python3 ./src/__main__.py
+pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+python ./src/__main__.py
 ```
 
 ### [try on gitpod:](https://gitpod.io#https://github.com/what-is-me/Machine-Learning-School-Project)
