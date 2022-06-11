@@ -10,7 +10,7 @@ from random import randint as rand
 import os
 from tqdm import tqdm
 
-os.system("mkdir image&cd image&mkdir LLE&mkdir PCA&mkdir colored&mkdir table")
+os.system("mkdir image&mkdir image/LLE&mkdir image/PCA&mkdir image/colored&mkdir image/table")
 
 
 def saveimg(pic: np.ndarray, path: str = "image/output") -> None:
