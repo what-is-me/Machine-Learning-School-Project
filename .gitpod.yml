@@ -4,5 +4,5 @@
 
 tasks:
     - init: sudo apt-get install libgdal-dev
-            echo "y"
-            pip install -r requirements.txt
+    - command: echo "y"
+    - command: pip install -r requirements.txt
